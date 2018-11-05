@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #485ff8;
+}
+
+.main {
+        position: relative;
+        text-align: center;
+        padding-top: 300px;
+        padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .main .subscribe{
+      width: 100%;
+    }
+}
+
+.subscribe {
+    width: 675px;
+    position: relative;
+    display: inline-block;
+    transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+}
+
+.subscribe:hover {
+    transform: translate(0,-3px);
+    -webkit-transform: translate(0,-3px);
+    transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .subscribe:hover{
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+    }
+}
+
+.subscribe input {
+    width: 100%;
+    height: 70px;
+    border-radius: 40px;
+    border: 1px solid;
+    text-indent: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0.10);
+    border: 0px hidden rgba(255, 255, 255, 0);
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: .8;
+}
+
+.button {
+    position: absolute;
+    height: 55px;
+    right: 9px;
+    border-radius: 40px;
+    top: 8px;
+    background-color: #262626;
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 0 30px;
+    width: 280px;
+    text-align: center;
+    transition: all .31s ease-in-out;
+    -webkit-transition: all .31s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #262626;
+    transition: all .31s ease-in-out;
+    -webkit-transition: all .31s ease-in-out;
+    transform: translate(3px,0);
+    -webkit-transform: translate(3px,0);
+    box-shadow: 0 0 18px 10px rgba(0, 0, 0, 0.07);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .button {
+position: static;
+margin-top: 10px;
+width: 100%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .button:hover {
+        transform: translate(0,2px);
+        -webkit-transform: translate(0,2px);
+    }
+}
+
+p {
+    padding: 20px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: capitalize;
+}
